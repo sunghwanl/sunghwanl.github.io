@@ -22,7 +22,7 @@ affiliation:
 buttons:
   -
     name: "cv"
-    url: "/"
+    url: "/cv.pdf"
   -
     name: "google scholar"
     url: "https://scholar.google.com/citations?user=TRaVY9IAAAAJ&hl=en"
