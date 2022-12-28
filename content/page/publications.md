@@ -69,7 +69,7 @@ publications:
     year: 2021
     links:
       - name: "paper (with appendix)"
-        url: "publications/promising-ldrf.pdf"
+        url: "https://sf.snu.ac.kr/publications/promising-ldrf.pdf"
       - name: "project page"
         url: "https://sf.snu.ac.kr/promising-ldrf/"
       - name: "publisher page"
