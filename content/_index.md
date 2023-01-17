@@ -1,8 +1,8 @@
 ---
 mainimg:
   alt: "Sung-Hwan Lee"
-  src: "https://i.imgur.com/taqGbkm.jpg"
-  type: "image/jpeg"
+  src: "/profile.png"
+  type: "image/png"
   
 name: "Sung-Hwan Lee (이성환)"
 job: "Ph.D. Student"
