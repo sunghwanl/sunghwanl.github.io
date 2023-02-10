@@ -6,7 +6,7 @@ baseurl = "https://sunghwanl.github.io/"
 # Language used
 languageCode = "en-us"
 # Website title
-title = "Sung-Hwan Lee"
+title = "Sung-Hwan Lee (이성환)"
 # Theme used
 theme = "hugo-astatine-theme"
 
