@@ -18,5 +18,5 @@ and studying fundamental principles in writing concurrent programs
 ([Local DRF](https://sf.snu.ac.kr/promising-ldrf/)).
 
 **I am on the job market this year, looking forward to working in
-programming languages, concurrency, compilers, and verification.
+programming languages, concurrency, compilers, or verification.
 Please don't hesitate to contact me if you have any questions!**
