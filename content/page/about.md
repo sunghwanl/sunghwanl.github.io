@@ -17,6 +17,6 @@ verifying compiler optimizations under weak memory
 and studying fundamental principles in writing concurrent programs
 ([Local DRF](https://sf.snu.ac.kr/promising-ldrf/)).
 
-**I am on the job market this year, looking forward to working in
+**I am on the job market this year, looking forward to working on
 programming languages, concurrency, compilers, or verification.
 Please don't hesitate to contact me if you have any questions!**
