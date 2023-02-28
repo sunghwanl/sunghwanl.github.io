@@ -2,6 +2,24 @@
 me: "Sung-Hwan Lee"
 
 publications:
+  - title: "Putting Weak Memory in Order via a Promising Intermediate Representation"
+    authors:
+      - name: "Sung-Hwan Lee"
+        url: "/"
+      - name: "Minki Cho"
+        url: "https://sf.snu.ac.kr/minki.cho/"
+      - name: "Roy Margalit"
+        url: "https://www.cs.tau.ac.il/research/roy.margalit/"
+      - name: "Chung-Kil Hur"
+        url: "https://sf.snu.ac.kr/gil.hur/"
+      - name: "Ori Lahav"
+        url: "http://www.cs.tau.ac.il/~orilahav/"
+    conf:
+      name: "ACM SIGPLAN Conference on Programming Language Design and Implementation, conditionally accepted"
+      short: "PLDI 2023"
+      url: "https://pldi23.sigplan.org/"
+    year: 2023
+
   - title: "Sequential Reasoning for Optimizing Compilers under Weak Memory Concurrency"
     authors:
       - name: "Minki Cho"
