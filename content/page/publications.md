@@ -15,7 +15,7 @@ publications:
       - name: "Ori Lahav"
         url: "http://www.cs.tau.ac.il/~orilahav/"
     conf:
-      name: "ACM SIGPLAN Conference on Programming Language Design and Implementation, conditionally accepted"
+      name: "ACM SIGPLAN Conference on Programming Language Design and Implementation"
       short: "PLDI 2023"
       url: "https://pldi23.sigplan.org/"
     year: 2023
