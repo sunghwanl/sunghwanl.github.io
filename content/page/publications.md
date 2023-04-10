@@ -19,6 +19,13 @@ publications:
       short: "PLDI 2023"
       url: "https://pldi23.sigplan.org/"
     year: 2023
+    links:
+      - name: "paper (with appendix)"
+        url: "https://sf.snu.ac.kr/publications/promising-ir-full.pdf"
+      - name: "project page"
+        url: "https://sf.snu.ac.kr/promising-ir/"
+      - name: "publisher page"
+        url: "https://doi.org/10.1145/3591297"
 
   - title: "Sequential Reasoning for Optimizing Compilers under Weak Memory Concurrency"
     authors:

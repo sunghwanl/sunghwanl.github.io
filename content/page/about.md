@@ -19,4 +19,4 @@ and studying fundamental principles in writing concurrent programs
 
 **I am on the job market this year, looking forward to working on
 programming languages, concurrency, compilers, or verification.
-Please don't hesitate to contact me if you have any questions!**
+Please contact me if you have any questions!**
