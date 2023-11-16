@@ -2,19 +2,6 @@
 me: "Sung-Hwan Lee"
 
 publications:
-  - title: "(Ph.D. Thesis) Understanding and Fulfilling the Desiderata for Relaxed Memory Models"
-    authors:
-      - name: "Sung-Hwan Lee"
-        url: "/"
-    conf:
-      name: "Department of Computer Science and Engineering, Seoul National University, Korea, 2023"
-    year: 2023
-    links:
-      - name: "paper"
-        url: "https://sf.snu.ac.kr/sunghwan.lee/thesis/thesis.pdf"
-      - name: "project page"
-        url: "https://sf.snu.ac.kr/sunghwan.lee/thesis/"
-
   - title: "Putting Weak Memory in Order via a Promising Intermediate Representation"
     authors:
       - name: "Sung-Hwan Lee"

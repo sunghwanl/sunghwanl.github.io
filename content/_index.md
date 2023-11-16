@@ -5,19 +5,17 @@ mainimg:
   type: "image/png"
   
 name: "Sung-Hwan Lee (이성환)"
-job: "Ph.D. Student"
-email: "sunghwan.lee [at] sf.snu.ac.kr"
+job: "Compiler Engineer at Rebellions Inc."
+email: "sunghwan.lee [at] rebellions.ai"
+
+intro: "
+I am a compiler engineer at [Rebellions](https://rebellions.ai/),
+working on developing an AI compiler for Rebellions AI chips.
+Before that, I recieved a Ph.D. in Computer Science and Engineering from Seoul National University,
+advised by [Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/).
+"
 
 affiliation:
-  -
-    name: "Software Foundations Laboratory"
-    url: "https://sf.snu.ac.kr/"
-  -
-    name: "Department of Computer Science and Engineering"
-    url: "https://cse.snu.ac.kr"
-  -
-    name: "Seoul National University"
-    url: "https://snu.ac.kr"
 
 buttons:
   -
