@@ -2,6 +2,22 @@
 me: "Sung-Hwan Lee"
 
 publications:
+  - title: "VeriRT: An End-To-End Verification Framework for Real-Time Distributed Systems"
+    authors:
+      - name: "Yoonseung Kim"
+        url: "https://kim-yoonseung.github.io/"
+      - name: "Sung-Hwan Lee"
+        url: "/"
+      - name: "Yonghyun Kim"
+        url: "https://sf.snu.ac.kr/yonghyun.kim/"
+      - name: "Chung-Kil Hur"
+        url: "https://sf.snu.ac.kr/gil.hur/"
+    conf:
+      name: "ACM SIGPLAN Symposium on Principles of Programming Languages"
+      short: "POPL 2025"
+      url: "https://popl25.sigplan.org/"
+    year: 2025
+
   - title: "Putting Weak Memory in Order via a Promising Intermediate Representation"
     authors:
       - name: "Sung-Hwan Lee"
