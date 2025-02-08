@@ -17,6 +17,11 @@ publications:
       short: "POPL 2025"
       url: "https://popl25.sigplan.org/"
     year: 2025
+    links:
+      - name: "project page"
+        url: "https://sf.snu.ac.kr/verirt/"
+      - name: "publisher page"
+        url: "https://dl.acm.org/doi/10.1145/3704897"
 
   - title: "Putting Weak Memory in Order via a Promising Intermediate Representation"
     authors:
