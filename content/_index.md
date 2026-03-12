@@ -10,10 +10,10 @@ email: "sunghwan.lee [at] rebellions.ai"
 
 intro: "
 I am a compiler engineer at [Rebellions](https://rebellions.ai/),
-working on developing an AI compiler for Rebellions AI chips.
-Before that, I received a Ph.D. in Computer Science and Engineering from Seoul National University,
-advised by [Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/).
-My Ph.D. research aimed at building formal foundations for
+where I design and build compilers for Rebellions AI chips.
+I received my Ph.D. in Computer Science and Engineering from Seoul National University,
+advised by [Prof. Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/).
+My research focused on building formal foundations for
 writing, compiling, and verifying concurrent software under weak consistency.
 "
 
