@@ -23,8 +23,8 @@ ROOT = Path(__file__).parent
 OUT = ROOT / "dist"
 
 
-def md(text, inline=False):
-    html = markdown.markdown(text or "")
+def md(text, inline=False, breaks=False):
+    html = markdown.markdown(text or "", extensions=["nl2br"] if breaks else [])
     if inline and html.startswith("<p>") and html.endswith("</p>") and html.count("<p>") == 1:
         html = html[3:-4]
     return Markup(html)
@@ -39,7 +39,8 @@ def build():
         trim_blocks=True,
         lstrip_blocks=True,
     )
-    env.filters["md"] = md
+    # Section bodies: every newline is a line break, so no trailing-space tricks.
+    env.filters["md"] = partial(md, breaks=True)
     env.filters["md_inline"] = partial(md, inline=True)
 
     if OUT.exists():

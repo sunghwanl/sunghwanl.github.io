@@ -37,6 +37,22 @@ me: "Sung-Hwan Lee"
 # Sections are rendered in order. A section has either `publications` or a
 # Markdown `body`.
 sections:
+  - title: "Experience"
+    body: |
+      - Nov. 2023 - Current, Compiler Engineer, Rebellions Inc.
+      - Sep. 2023 - Oct. 2023, Postdoctoral Researcher, Seoul National University
+
+  - title: "Education"
+    # (md) each newline inside a list item becomes a line break
+    body: |
+      - Seoul National University, Sep. 2017 - Aug. 2023
+        Ph.D. in Computer Science and Engineering
+        Advisor: [Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/)
+        Thesis: [Understanding and Fulfilling the Desiderata for Relaxed Memory Models](https://sf.snu.ac.kr/sunghwan.lee/thesis/)
+      - Seoul National University, Mar. 2013 - Aug. 2017
+        B.S. in Computer Science and Engineering
+      - Seoul Science High School, Mar. 2010 - Feb. 2013
+
   - title: "Publications"
     publications:
       - title: "VeriRT: An End-To-End Verification Framework for Real-Time Distributed Systems"
@@ -160,21 +176,9 @@ sections:
           - { name: "paper", url: "http://koreascience.or.kr/article/JAKO201214350262487.pdf" }
           - { name: "publisher page", url: "http://jkas.kas.org/journal/article.php?code=73996&list.php?m=1" }
 
-  - title: "Education"
-    # (md) trailing two spaces = line break
+  - title: "Professional Activities"
     body: |
-      - Seoul National University, Sep. 2017 - Aug. 2023
-        Ph.D. in Computer Science and Engineering
-        Advisor: [Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/)
-        Thesis: [Understanding and Fulfilling the Desiderata for Relaxed Memory Models](https://sf.snu.ac.kr/sunghwan.lee/thesis/)
-      - Seoul National University, Mar. 2013 - Aug. 2017
-        B.S. in Computer Science and Engineering
-      - Seoul Science High School, Mar. 2010 - Feb. 2013
-
-  - title: "Experience"
-    body: |
-      - Nov. 2023 - Current, Compiler Engineer, Rebellions Inc.
-      - Sep. 2023 - Oct. 2023, Postdoctoral Researcher, Seoul National University
+      - Program Committee: [PLDI 2027](https://pldi27.sigplan.org/)
 
   - title: "Honors and Awards"
     body: |
