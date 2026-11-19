@@ -15,19 +15,30 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <script>
-    // Apply saved theme before paint to avoid a flash.
-    try { if (localStorage.theme === 'dark') document.documentElement.classList.add('dark'); } catch (e) {}
-    function toggleMode() {
-      var dark = document.documentElement.classList.toggle('dark');
-      try { localStorage.theme = dark ? 'dark' : 'light'; } catch (e) {}
-    }
+    // Theme: an explicit choice (saved by the toggle) wins; otherwise follow the OS.
+    // Runs in <head> so the right theme is applied before first paint.
+    (function () {
+      var root = document.documentElement;
+      var os = window.matchMedia('(prefers-color-scheme: dark)');
+      function saved() { try { return localStorage.theme; } catch (e) { return null; } }
+      function apply() {
+        var s = saved();
+        root.classList.toggle('dark', s ? s === 'dark' : os.matches);
+      }
+      apply();
+      os.addEventListener('change', apply);
+      window.toggleMode = function () {
+        var dark = root.classList.toggle('dark');
+        try { localStorage.theme = dark ? 'dark' : 'light'; } catch (e) {}
+      };
+    })();
   </script>
 </head>
 <body>
   <header>
     <nav class="container nav">
-      <a href="{{ site.url }}" class="nav-title">{{ site.title }}</a>
       <button type="button" class="mode-toggle" onclick="toggleMode()" aria-label="Toggle between dark and light mode">
         <img class="icon-light" src="/img/light_mode.svg" alt="">
         <img class="icon-dark" src="/img/dark_mode.svg" alt="">
@@ -41,7 +52,7 @@
         <img src="{{ profile.image }}" alt="{{ profile.image_alt }}">
       </div>
       <div class="info">
-        <p class="name">{{ profile.name }}</p>
+        <h1 class="name">{{ profile.name }}</h1>
         {{ profile.intro | md_inline }}
         <p class="email">{{ profile.email }}</p>
         <p class="links">
@@ -53,7 +64,7 @@
     </div>
 
     {% for section in sections %}
-    <hr{% if loop.first %} class="first"{% endif %}>
+    <hr>
     <section>
       <h2>{{ section.title }}</h2>
       {% if section.publications %}
@@ -76,6 +87,23 @@
           {% for l in p.links %}
           [<a href="{{ l.url }}">{{ l.name }}</a>]
           {% endfor %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% elif section.entries %}
+      <ul class="entries">
+        {% for e in section.entries %}
+        <li>
+          <div class="entry-head">
+            <span class="entry-what"><strong>{{ e.what | md_inline }}</strong>{% if e.where %}{{ section.sep or ", " }}{{ e.where | md_inline }}{% endif %}</span>
+            {% if e.when %}<span class="entry-when">{{ e.when }}</span>{% endif %}
+          </div>
+          {% if e.details %}
+          <div class="entry-details">
+            {% for d in e.details %}{{ d | md_inline }}{% if not loop.last %}<br>{% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>

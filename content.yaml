@@ -4,9 +4,9 @@
 site:
   title: "Sung-Hwan Lee (이성환)"
   url: "https://sunghwanl.github.io/"
-  description: "Sung-Hwan Lee"
+  description: "ML compiler engineer at Rebellions. Ph.D. in Computer Science and Engineering from Seoul National University."
   author: "Sung-Hwan Lee"
-  og_image: "https://i.imgur.com/taqGbkm.jpg"
+  og_image: "https://sunghwanl.github.io/profile.png"
 
 profile:
   name: "Sung-Hwan Lee (이성환)"
@@ -14,7 +14,7 @@ profile:
   image_alt: "Sung-Hwan Lee"
   # (md)
   intro: >
-    I am a compiler engineer at [Rebellions](https://rebellions.ai/),
+    I am an ML compiler engineer at [Rebellions](https://rebellions.ai/),
     where I design and build compilers for Rebellions AI chips.
     I received my Ph.D. in Computer Science and Engineering from Seoul National University,
     advised by [Prof. Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/).
@@ -34,24 +34,36 @@ profile:
 # Author name to underline (instead of linking) in the publication list.
 me: "Sung-Hwan Lee"
 
-# Sections are rendered in order. A section has either `publications` or a
-# Markdown `body`.
+# Sections are rendered in order. A section has one of:
+#   publications: list of papers (see below)
+#   entries:      CV-style items, rendered as "**what**, where ........ when"
+#                 with optional detail lines underneath. what/where/details
+#                 are (md); where, when and details are optional.
+#                 Section-level `sep` replaces the ", " between what and where.
+#   body:         free-form (md); each newline inside a list item is a line break
 sections:
   - title: "Experience"
-    body: |
-      - Nov. 2023 - Current, Compiler Engineer, Rebellions Inc.
-      - Sep. 2023 - Oct. 2023, Postdoctoral Researcher, Seoul National University
+    entries:
+      - what: "Compiler Engineer"
+        where: "Rebellions Inc."
+        when: "Nov. 2023 - Present"
+      - what: "Postdoctoral Researcher"
+        where: "Seoul National University"
+        when: "Sep. 2023 - Oct. 2023"
 
   - title: "Education"
-    # (md) each newline inside a list item becomes a line break
-    body: |
-      - Seoul National University, Sep. 2017 - Aug. 2023
-        Ph.D. in Computer Science and Engineering
-        Advisor: [Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/)
-        Thesis: [Understanding and Fulfilling the Desiderata for Relaxed Memory Models](https://sf.snu.ac.kr/sunghwan.lee/thesis/)
-      - Seoul National University, Mar. 2013 - Aug. 2017
-        B.S. in Computer Science and Engineering
-      - Seoul Science High School, Mar. 2010 - Feb. 2013
+    entries:
+      - what: "Ph.D. in Computer Science and Engineering"
+        where: "Seoul National University"
+        when: "Sep. 2017 - Aug. 2023"
+        details:
+          - "Advisor: [Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/)"
+          - "Thesis: [Understanding and Fulfilling the Desiderata for Relaxed Memory Models](https://sf.snu.ac.kr/sunghwan.lee/thesis/)"
+      - what: "B.S. in Computer Science and Engineering"
+        where: "Seoul National University"
+        when: "Mar. 2013 - Aug. 2017"
+      - what: "Seoul Science High School"
+        when: "Mar. 2010 - Feb. 2013"
 
   - title: "Publications"
     publications:
@@ -166,7 +178,7 @@ sections:
           - { name: "project page", url: "https://sf.snu.ac.kr/promising-arm-riscv/" }
           - { name: "publisher page", url: "https://doi.org/10.1145/3314221.3314624" }
 
-      - title: "Illuminance During a Solar Eclipse with Limb Darkening: A Mathematicsl Model"
+      - title: "Illuminance During a Solar Eclipse with Limb Darkening: A Mathematical Model"
         authors:
           - { name: "Sung-Hwan Lee" }
           - { name: "Siyul Lee" }
@@ -177,11 +189,19 @@ sections:
           - { name: "publisher page", url: "http://jkas.kas.org/journal/article.php?code=73996&list.php?m=1" }
 
   - title: "Professional Activities"
-    body: |
-      - Program Committee: [PLDI 2027](https://pldi27.sigplan.org/)
+    sep: ": "
+    entries:
+      - what: "Program Committee"
+        where: "[PLDI 2027](https://pldi27.sigplan.org/)"
 
   - title: "Honors and Awards"
-    body: |
-      - Aug. 2023, SNU CSE PhD Dissertation Award, Department of Computer Science and Engineering, Seoul National University
-      - Mar. 2023, Star Student Researcher Award, BK21 FOUR Intelligence Computing, Seoul National University
-      - Mar. 2013 - Aug. 2017, The Presidential Science Scholarship, Korea Student Aid Foundation
+    entries:
+      - what: "SNU CSE PhD Dissertation Award"
+        where: "Department of Computer Science and Engineering, Seoul National University"
+        when: "Aug. 2023"
+      - what: "Star Student Researcher Award"
+        where: "BK21 FOUR Intelligence Computing, Seoul National University"
+        when: "Mar. 2023"
+      - what: "The Presidential Science Scholarship"
+        where: "Korea Student Aid Foundation"
+        when: "Mar. 2013 - Aug. 2017"
