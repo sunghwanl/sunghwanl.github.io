@@ -1,4 +1,0 @@
----
----
-- Nov. 2023 - Current, Compiler Engineer, Rebellions Inc.
-- Sep. 2023 - Oct. 2023, Postdoctoral Researcher, Seoul National University

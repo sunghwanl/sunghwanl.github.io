@@ -1,2 +1,4 @@
-public
-.hugo_build.lock
+dist/
+__pycache__/
+# leftover root-owned Hugo output
+public/

@@ -1,0 +1,183 @@
+# Site content. Edit this file and run `python build.py` to regenerate dist/.
+# Text fields marked (md) are rendered as Markdown.
+
+site:
+  title: "Sung-Hwan Lee (이성환)"
+  url: "https://sunghwanl.github.io/"
+  description: "Sung-Hwan Lee"
+  author: "Sung-Hwan Lee"
+  og_image: "https://i.imgur.com/taqGbkm.jpg"
+
+profile:
+  name: "Sung-Hwan Lee (이성환)"
+  image: "/profile.png"
+  image_alt: "Sung-Hwan Lee"
+  # (md)
+  intro: >
+    I am a compiler engineer at [Rebellions](https://rebellions.ai/),
+    where I design and build compilers for Rebellions AI chips.
+    I received my Ph.D. in Computer Science and Engineering from Seoul National University,
+    advised by [Prof. Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/).
+    My research focused on building formal foundations for
+    writing, compiling, and verifying concurrent software under weak consistency.
+  email: "sunghwan.lee [at] rebellions.ai"
+  links:
+    - name: "cv"
+      url: "/cv.pdf"
+    - name: "google scholar"
+      url: "https://scholar.google.com/citations?user=TRaVY9IAAAAJ&hl=en"
+    - name: "dblp"
+      url: "https://dblp.org/pid/86/4776-1.html"
+    - name: "github"
+      url: "https://github.com/sunghwanl"
+
+# Author name to underline (instead of linking) in the publication list.
+me: "Sung-Hwan Lee"
+
+# Sections are rendered in order. A section has either `publications` or a
+# Markdown `body`.
+sections:
+  - title: "Publications"
+    publications:
+      - title: "VeriRT: An End-To-End Verification Framework for Real-Time Distributed Systems"
+        authors:
+          - { name: "Yoonseung Kim", url: "https://kim-yoonseung.github.io/" }
+          - { name: "Sung-Hwan Lee" }
+          - { name: "Yonghyun Kim", url: "https://sf.snu.ac.kr/yonghyun.kim/" }
+          - { name: "Chung-Kil Hur", url: "https://sf.snu.ac.kr/gil.hur/" }
+        venue:
+          name: "ACM SIGPLAN Symposium on Principles of Programming Languages"
+          short: "POPL 2025"
+          url: "https://popl25.sigplan.org/"
+        links:
+          - { name: "project page", url: "https://sf.snu.ac.kr/verirt/" }
+          - { name: "publisher page", url: "https://dl.acm.org/doi/10.1145/3704897" }
+
+      - title: "Putting Weak Memory in Order via a Promising Intermediate Representation"
+        authors:
+          - { name: "Sung-Hwan Lee" }
+          - { name: "Minki Cho", url: "https://sf.snu.ac.kr/minki.cho/" }
+          - { name: "Roy Margalit", url: "https://www.cs.tau.ac.il/research/roy.margalit/" }
+          - { name: "Chung-Kil Hur", url: "https://sf.snu.ac.kr/gil.hur/" }
+          - { name: "Ori Lahav", url: "http://www.cs.tau.ac.il/~orilahav/" }
+        venue:
+          name: "ACM SIGPLAN Conference on Programming Language Design and Implementation"
+          short: "PLDI 2023"
+          url: "https://pldi23.sigplan.org/"
+        links:
+          - { name: "paper (with appendix)", url: "https://sf.snu.ac.kr/publications/promising-ir-full.pdf" }
+          - { name: "project page", url: "https://sf.snu.ac.kr/promising-ir/" }
+          - { name: "publisher page", url: "https://doi.org/10.1145/3591297" }
+
+      - title: "Sequential Reasoning for Optimizing Compilers under Weak Memory Concurrency"
+        authors:
+          - { name: "Minki Cho", url: "https://sf.snu.ac.kr/minki.cho/", equal: true }
+          - { name: "Sung-Hwan Lee", equal: true }
+          - { name: "Dongjae Lee", url: "https://sf.snu.ac.kr/dongjae.lee/" }
+          - { name: "Chung-Kil Hur", url: "https://sf.snu.ac.kr/gil.hur/" }
+          - { name: "Ori Lahav", url: "http://www.cs.tau.ac.il/~orilahav/" }
+        venue:
+          name: "ACM SIGPLAN Conference on Programming Language Design and Implementation"
+          short: "PLDI 2022"
+          url: "https://pldi22.sigplan.org/"
+        links:
+          - { name: "paper (with appendix)", url: "https://sf.snu.ac.kr/publications/promising-seq-full.pdf" }
+          - { name: "project page", url: "https://sf.snu.ac.kr/promising-seq/" }
+          - { name: "publisher page", url: "https://doi.org/10.1145/3519939.3523718" }
+
+      - title: "Revamping Hardware Persistency Models: View-based and Axiomatic Persistency Models for Intel-x86 and ARMv8"
+        authors:
+          - { name: "Kyeongmin Cho", url: "https://cp.kaist.ac.kr/kyeongmin.cho/" }
+          - { name: "Sung-Hwan Lee" }
+          - { name: "Azalea Raad", url: "https://www.soundandcomplete.org/" }
+          - { name: "Jeehoon Kang", url: "https://cp.kaist.ac.kr/jeehoon.kang/" }
+        venue:
+          name: "ACM SIGPLAN Conference on Programming Language Design and Implementation"
+          short: "PLDI 2021"
+          url: "https://conf.researchr.org/home/pldi-2021"
+        links:
+          - { name: "paper", url: "https://drive.google.com/file/d/1C3j8mlfcyuFUW16J-BSiZ6h_aJdq_s5d/view" }
+          - { name: "project page", url: "https://cp.kaist.ac.kr/pmem" }
+          - { name: "publisher page", url: "https://doi.org/10.1145/3453483.3454027" }
+
+      - title: "Modular Data-Race-Freedom Guarantees in the Promising Semantics"
+        authors:
+          - { name: "Minki Cho", url: "https://sf.snu.ac.kr/minki.cho/" }
+          - { name: "Sung-Hwan Lee" }
+          - { name: "Chung-Kil Hur", url: "https://sf.snu.ac.kr/gil.hur/" }
+          - { name: "Ori Lahav", url: "http://www.cs.tau.ac.il/~orilahav/" }
+        venue:
+          name: "ACM SIGPLAN Conference on Programming Language Design and Implementation"
+          short: "PLDI 2021"
+          url: "https://conf.researchr.org/home/pldi-2021"
+        links:
+          - { name: "paper (with appendix)", url: "https://sf.snu.ac.kr/publications/promising-ldrf.pdf" }
+          - { name: "project page", url: "https://sf.snu.ac.kr/promising-ldrf/" }
+          - { name: "publisher page", url: "https://doi.org/10.1145/3453483.3454082" }
+
+      - title: "Promising 2.0: Global Optimizations in Relaxed Memory Concurrency"
+        authors:
+          - { name: "Sung-Hwan Lee" }
+          - { name: "Minki Cho", url: "https://sf.snu.ac.kr/minki.cho/" }
+          - { name: "Anton Podkopaev", url: "http://podkopaev.net/" }
+          - { name: "Soham Chakraborty", url: "https://www.st.ewi.tudelft.nl/sschakraborty/" }
+          - { name: "Chung-Kil Hur", url: "https://sf.snu.ac.kr/gil.hur/" }
+          - { name: "Ori Lahav", url: "http://www.cs.tau.ac.il/~orilahav/" }
+          - { name: "Viktor Vafeiadis", url: "https://people.mpi-sws.org/~viktor/" }
+        venue:
+          name: "ACM SIGPLAN Conference on Programming Language Design and Implementation"
+          short: "PLDI 2020"
+          url: "https://conf.researchr.org/home/pldi-2020"
+        links:
+          - { name: "paper", url: "https://sf.snu.ac.kr/publications/promising2.pdf" }
+          - { name: "appendix", url: "https://sf.snu.ac.kr/publications/promising2-full.pdf" }
+          - { name: "project page", url: "https://sf.snu.ac.kr/promising2.0/" }
+          - { name: "publisher page", url: "https://doi.org/10.1145/3385412.3386010" }
+
+      - title: "Promising-ARM/RISC-V: A Simpler and Faster Operational Concurrency Model"
+        authors:
+          - { name: "Christopher Pulte", url: "https://www.cl.cam.ac.uk/~cp526/" }
+          - { name: "Jean Pichon-Pharabod", url: "https://jeanpichon.github.io/" }
+          - { name: "Jeehoon Kang", url: "https://cp.kaist.ac.kr/jeehoon.kang/" }
+          - { name: "Sung-Hwan Lee" }
+          - { name: "Chung-Kil Hur", url: "https://sf.snu.ac.kr/gil.hur/" }
+        venue:
+          name: "ACM SIGPLAN Conference on Programming Language Design and Implementation"
+          short: "PLDI 2019"
+          url: "https://conf.researchr.org/home/pldi-2019"
+        links:
+          - { name: "paper (with appendix)", url: "https://sf.snu.ac.kr/publications/promising-arm-riscv.pdf" }
+          - { name: "project page", url: "https://sf.snu.ac.kr/promising-arm-riscv/" }
+          - { name: "publisher page", url: "https://doi.org/10.1145/3314221.3314624" }
+
+      - title: "Illuminance During a Solar Eclipse with Limb Darkening: A Mathematicsl Model"
+        authors:
+          - { name: "Sung-Hwan Lee" }
+          - { name: "Siyul Lee" }
+        venue:
+          name: "Journal of the Korean Astronomical Society, vol. 45, no. 5, Oct. 2012"
+        links:
+          - { name: "paper", url: "http://koreascience.or.kr/article/JAKO201214350262487.pdf" }
+          - { name: "publisher page", url: "http://jkas.kas.org/journal/article.php?code=73996&list.php?m=1" }
+
+  - title: "Education"
+    # (md) trailing two spaces = line break
+    body: |
+      - Seoul National University, Sep. 2017 - Aug. 2023
+        Ph.D. in Computer Science and Engineering
+        Advisor: [Chung-Kil Hur](https://sf.snu.ac.kr/gil.hur/)
+        Thesis: [Understanding and Fulfilling the Desiderata for Relaxed Memory Models](https://sf.snu.ac.kr/sunghwan.lee/thesis/)
+      - Seoul National University, Mar. 2013 - Aug. 2017
+        B.S. in Computer Science and Engineering
+      - Seoul Science High School, Mar. 2010 - Feb. 2013
+
+  - title: "Experience"
+    body: |
+      - Nov. 2023 - Current, Compiler Engineer, Rebellions Inc.
+      - Sep. 2023 - Oct. 2023, Postdoctoral Researcher, Seoul National University
+
+  - title: "Honors and Awards"
+    body: |
+      - Aug. 2023, SNU CSE PhD Dissertation Award, Department of Computer Science and Engineering, Seoul National University
+      - Mar. 2023, Star Student Researcher Award, BK21 FOUR Intelligence Computing, Seoul National University
+      - Mar. 2013 - Aug. 2017, The Presidential Science Scholarship, Korea Student Aid Foundation
