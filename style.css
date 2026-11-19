@@ -1,0 +1,133 @@
+/* Hand-written port of the hugo-astatine-theme look (Tailwind-free). */
+
+:root {
+  /* Change this one line to switch fonts. */
+  /* Source Sans 3 for Latin; Hangul falls through to Pretendard. */
+  --font: "Source Sans 3", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, "segoe ui", roboto, "helvetica neue", arial, sans-serif;
+  --tracking: 0;
+  --bg: #fff;
+  --fg: #000;
+  --muted: #52525b;        /* zinc-600 */
+  --footer: #262626;       /* neutral-800 */
+  --link: #1e40af;         /* blue-800 */
+  --link-hover: #111827;   /* gray-900 */
+  --hover-line: #e2e8f0;   /* slate-200 */
+  --rule: #e5e7eb;         /* gray-200 */
+  --img-filter: none;
+}
+:root.dark {
+  --bg: #27272a;           /* zinc-800 */
+  --fg: #d4d4d8;           /* zinc-300 */
+  --muted: #a1a1aa;        /* zinc-400 */
+  --footer: #a3a3a3;       /* neutral-400 */
+  --link: #93c5fd;         /* blue-300 */
+  --link-hover: #e5e7eb;   /* gray-200 */
+  --rule: #71717a;         /* zinc-500 */
+  --img-filter: brightness(.8) contrast(1.25);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 1.0625rem; /* 17px */
+  letter-spacing: var(--tracking);
+  line-height: 1.5;
+  font-family: var(--font);
+}
+
+a { color: var(--link); text-decoration: none; }
+strong, b { font-weight: 600; }
+a:hover { color: var(--link-hover); border-bottom: 2px solid var(--hover-line); }
+
+img { display: block; max-width: 100%; height: auto; margin: 0 auto; filter: var(--img-filter); }
+
+p, ul, ol { margin: 1rem 0; }
+ul, ol { padding-left: 1.75rem; }
+li { list-style: disc; }
+
+hr {
+  width: 100%;
+  height: 2px;
+  margin: 1.5rem auto;
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* Layout: full width with 0.5rem gutter until the column hits its max width. */
+.container { width: 100%; max-width: 48rem; margin: 0 auto; padding: 0 .5rem; }
+@media (min-width: 1280px) { .container { max-width: 54rem; } }
+@media (min-width: 1536px) { .container { max-width: 60rem; } }
+
+/* Nav: a thin row inside the content column, just tall enough for the toggle. */
+.nav { display: flex; justify-content: flex-end; padding-top: .75rem; }
+
+.mode-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 1.75rem;
+}
+.mode-toggle img { width: 1.75rem; height: 1.75rem; padding: .375rem; filter: none; }
+.mode-toggle .icon-light { display: none; }
+:root.dark .mode-toggle .icon-light { display: inline; }
+:root.dark .mode-toggle .icon-dark { display: none; }
+
+/* Main */
+.content { line-height: 1.7; }
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+/* One column on phones: cap the photo so it doesn't fill the whole first screen. */
+.picture { margin: 1.5rem auto; max-width: 15rem; }
+.info { margin: 0 1rem; line-height: 1.375; }
+.info .name { font-size: 1.875rem; line-height: 2.25rem; font-weight: normal; margin: 1rem 0; }
+.info .email { margin: 1.5rem 0 .25rem; }
+.info .links { margin: 1.5rem 0 .25rem; }
+
+@media (min-width: 640px) {
+  .head { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .picture { max-width: 100%; }
+  .info { grid-column: span 2 / span 2; }
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: normal;
+  margin: 0 0 1rem;
+}
+
+.pubs > li { margin: .75rem 0; }
+
+/* CV-style entries: "what, where" on the left, date pinned right. */
+.entries > li { margin: .5rem 0; }
+.entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1.5rem; }
+.entry-what { flex: 1 1 auto; min-width: 0; }
+/* Fixed date column (fits the longest range, "Sep. 2017 - Aug. 2023" = 8.75em in
+   Source Sans 3), so single dates reserve the same space and text wraps evenly. */
+.entry-when {
+  flex: none;
+  min-width: 9em;
+  text-align: right;
+  white-space: nowrap;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.entry-details { color: var(--muted); font-size: .9375em; line-height: 1.6; }
+/* Phones: date drops under the title instead of squeezing it. */
+@media (max-width: 639px) {
+  .entry-head { display: block; }
+  .entry-when { display: block; min-width: 0; text-align: left; }
+}
+
+/* Footer */
+.footer { text-align: center; margin-top: 4.5rem; padding-bottom: 60px; color: var(--footer); }
