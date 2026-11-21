@@ -59,9 +59,7 @@ hr {
 }
 
 /* Layout: full width with 0.5rem gutter until the column hits its max width. */
-.container { width: 100%; max-width: 48rem; margin: 0 auto; padding: 0 .5rem; }
-@media (min-width: 1280px) { .container { max-width: 54rem; } }
-@media (min-width: 1536px) { .container { max-width: 60rem; } }
+.container { width: 100%; max-width: 54rem; margin: 0 auto; padding: 0 .5rem; }
 
 /* Nav: a thin row inside the content column, just tall enough for the toggle. */
 .nav { display: flex; justify-content: flex-end; padding-top: .75rem; }
