@@ -188,7 +188,7 @@ sections:
           - { name: "paper", url: "http://koreascience.or.kr/article/JAKO201214350262487.pdf" }
           - { name: "publisher page", url: "http://jkas.kas.org/journal/article.php?code=73996&list.php?m=1" }
 
-  - title: "Professional Activities"
+  - title: "Academic Service"
     sep: ": "
     entries:
       - what: "Program Committee"
