@@ -24,7 +24,7 @@
   --link: #93c5fd;         /* blue-300 */
   --link-hover: #e5e7eb;   /* gray-200 */
   --rule: #71717a;         /* zinc-500 */
-  --img-filter: brightness(.8) contrast(1.25);
+  --img-filter: brightness(.92);  /* tone the photo down slightly on dark bg */
 }
 
 *, *::before, *::after { box-sizing: border-box; }
